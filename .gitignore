@@ -1,0 +1,12 @@
+venv/
+.ipynb_checkpoints/
+/2023_descriptif-variables_open-medic.xls
+/asmr-20240924.csv
+/asmr.db
+/titanic.csv
+/titanic.db
+/Chinook.db
+/Chinook_Sqlite.sql 
+/asmr_v2.db
+/llm_oversql_tuto.ipynb
+/os
