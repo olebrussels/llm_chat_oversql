@@ -12,3 +12,4 @@ venv/
 /llm_oversql_tuto.ipynb
 /os
 tests/.env
+*.xlsx
