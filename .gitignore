@@ -13,3 +13,4 @@ venv/
 /os
 .env
 *.xlsx
+/diary.db
