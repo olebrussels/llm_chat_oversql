@@ -1,0 +1,29 @@
+The error suggests that the `StateGraph` object does not have a method called `add_sequence`. This could happen if:
+1. **The `StateGraph` class does not define the `add_sequence` method**: You might be using an outdated or incorrect version of the `langgraph` library where the `add_sequence` method is not implemented.
+
+2. **Incorrect import or usage**: The `StateGraph` class might not be the correct class you intended to use, or the library might have been updated with a different API.
+
+### Steps to Debug and Fix:
+1. **Check the Documentation**: Verify the official documentation or source code of the `langgraph` library to confirm if `StateGraph` has an `add_sequence` method. If the method does not exist, look for an alternative way to achieve the same functionality.
+
+2. **Inspect the `StateGraph` Class**: Add the following code to inspect the available methods in the `StateGraph` class:
+    ```python
+    print(dir(StateGraph))
+    ```
+    This will list all the attributes and methods of the `StateGraph` class. Look for a method similar to `add_sequence`.
+
+3. **Update the Library**: Ensure you are using the latest version of the `langgraph` library. You can update it using:
+    ```python
+    %pip install --upgrade langgraph
+    ```
+
+4. **Alternative Approach**: If the `add_sequence` method is not available, you might need to manually add the sequence of functions to the graph. For example:
+    ```python
+    graph_builder.add_node(write_query)
+    graph_builder.add_node(execute_query)
+    graph_builder.add_node(generate_answer)
+    ```
+
+5. **Check for Breaking Changes**: If the library was recently updated, there might be breaking changes in the API. Check the release notes or changelog of the library.
+
+Let me know if you need further assistance!
