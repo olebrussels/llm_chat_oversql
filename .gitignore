@@ -14,3 +14,4 @@ venv/
 .env
 *.xlsx
 /diary.db
+/diary_langraph.ipynb
